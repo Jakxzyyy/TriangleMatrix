@@ -1,0 +1,360 @@
+﻿<Window x:Class="TriangleMatrix.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TriangleMatrix"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <TextBlock Text="Исходная матрица"
+                       HorizontalAlignment="Center"/>
+            <Button x:Name="BRandomize"
+                    Width="110"
+                    Height="20"
+                    Content="Задать случайно"
+                    HorizontalAlignment="Center"
+                    Click="BRandomize_Click"/>
+        </StackPanel>
+
+        <StackPanel x:Name="SPMatrix1"
+                        Grid.Column="0"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                    Grid.Row="1">
+            <StackPanel Orientation="Horizontal"
+                            x:Name="SPMatrix1row1">
+                <TextBox x:Name="TBa11"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa12"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa13"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa14"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa15"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                            x:Name="SPMatrix1row2">
+                <TextBox x:Name="TBa21"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa22"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa23"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa24"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa25"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                            x:Name="SPMatrix1row3">
+                <TextBox x:Name="TBa31"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa32"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa33"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa34"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa35"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                            x:Name="SPMatrix1row4">
+                <TextBox x:Name="TBa41"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa42"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa43"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa44"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa45"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                            x:Name="SPMatrix1row5">
+                <TextBox x:Name="TBa51"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa52"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa53"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa54"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBa55"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock Text="Результатная матрица"
+                       HorizontalAlignment="Center"/>
+            <Button x:Name="BClear"
+                    Width="120"
+                    Height="20"
+                    Content="Очистить"
+                    HorizontalAlignment="Center"
+                    Click="BClear_Click"/>
+        </StackPanel>
+
+        <StackPanel x:Name="SPMatrix2"
+                        Grid.Column="1"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                    Grid.Row="1">
+            <StackPanel Orientation="Horizontal"
+                            x:Name="SPMatrix2row1">
+                <TextBox x:Name="TBс11"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBс12"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBс13"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBс14"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBс15"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                            x:Name="SPMatrix2row2">
+                <TextBox x:Name="TBс21"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBс22"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBс23"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBс24"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBс25"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                            x:Name="SPMatrix2row3">
+                <TextBox x:Name="TBc31"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBc32"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBc33"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBc34"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBc35"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                            x:Name="SPMatrix2row4">
+                <TextBox x:Name="TBc41"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBc42"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBc43"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBc44"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBc45"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                            x:Name="SPMatrix2row5">
+                <TextBox x:Name="TBc51"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBc52"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBc53"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBc54"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+                <TextBox x:Name="TBc55"
+                             Margin="5"
+                             Height="30"
+                             Width="30"
+                             TextAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="2">
+            <Button x:Name="BCalculateTriangle"
+                    Margin="10"
+                    Content="Треугольный вид"
+                    Width="120"
+                    Height="30"
+                    Click="BCalculateTriangle_Click"/>
+            <Button x:Name="BCalculateDiagonal"
+                    Margin="10"
+                    Content="Диагональный вид"
+                    Width="120"
+                    Height="30"
+                    Click="BCalculateDiagonal_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

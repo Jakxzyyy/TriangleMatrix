@@ -1,0 +1,15 @@
+Y:\Мамаев М.А\С#\Мат моделлирование\TriangleMatrix\TriangleMatrix\bin\Debug\TriangleMatrix.exe.config
+Y:\Мамаев М.А\С#\Мат моделлирование\TriangleMatrix\TriangleMatrix\bin\Debug\TriangleMatrix.exe
+Y:\Мамаев М.А\С#\Мат моделлирование\TriangleMatrix\TriangleMatrix\bin\Debug\TriangleMatrix.pdb
+Y:\Мамаев М.А\С#\Мат моделлирование\TriangleMatrix\TriangleMatrix\obj\Debug\TriangleMatrix.csproj.AssemblyReference.cache
+Y:\Мамаев М.А\С#\Мат моделлирование\TriangleMatrix\TriangleMatrix\obj\Debug\MainWindow.g.cs
+Y:\Мамаев М.А\С#\Мат моделлирование\TriangleMatrix\TriangleMatrix\obj\Debug\App.g.cs
+Y:\Мамаев М.А\С#\Мат моделлирование\TriangleMatrix\TriangleMatrix\obj\Debug\TriangleMatrix_MarkupCompile.cache
+Y:\Мамаев М.А\С#\Мат моделлирование\TriangleMatrix\TriangleMatrix\obj\Debug\TriangleMatrix_MarkupCompile.lref
+Y:\Мамаев М.А\С#\Мат моделлирование\TriangleMatrix\TriangleMatrix\obj\Debug\MainWindow.baml
+Y:\Мамаев М.А\С#\Мат моделлирование\TriangleMatrix\TriangleMatrix\obj\Debug\TriangleMatrix.g.resources
+Y:\Мамаев М.А\С#\Мат моделлирование\TriangleMatrix\TriangleMatrix\obj\Debug\TriangleMatrix.Properties.Resources.resources
+Y:\Мамаев М.А\С#\Мат моделлирование\TriangleMatrix\TriangleMatrix\obj\Debug\TriangleMatrix.csproj.GenerateResource.cache
+Y:\Мамаев М.А\С#\Мат моделлирование\TriangleMatrix\TriangleMatrix\obj\Debug\TriangleMatrix.csproj.CoreCompileInputs.cache
+Y:\Мамаев М.А\С#\Мат моделлирование\TriangleMatrix\TriangleMatrix\obj\Debug\TriangleMatrix.exe
+Y:\Мамаев М.А\С#\Мат моделлирование\TriangleMatrix\TriangleMatrix\obj\Debug\TriangleMatrix.pdb
